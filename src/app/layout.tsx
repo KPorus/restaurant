@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Oswald, Roboto } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "500", "700"] });
 export const metadata: Metadata = {
   title: "Restaurant",
