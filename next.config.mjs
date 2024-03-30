@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import path from "path";
+
+const nextConfig = {
+  sassOptions: {
+    includePaths: [path.join(new URL(".", import.meta.url).pathname, "styles")],
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**i.ibb.co**",
+      },
+    ],
+  },
+};
 
 export default nextConfig;

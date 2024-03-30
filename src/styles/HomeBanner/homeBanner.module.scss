@@ -1,0 +1,92 @@
+@import '../mixins/breakpoint.scss';
+
+$primary-color: #f1f1f1;
+$horizontal-margin: auto;
+
+.heroWrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    background: url('https://i.ibb.co/JsJM0t1/Bg.jpg') no-repeat center;
+    background-size: cover;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.144);
+        z-index: -1;
+    }
+
+
+    .home {
+        @include sm {
+            background: transparent;
+            margin-left: $horizontal-margin;
+            margin-right: $horizontal-margin;
+            color: $primary-color;
+        }
+
+        @include md {
+            background: transparent;
+            margin-left: $horizontal-margin;
+            margin-right: $horizontal-margin;
+            color: $primary-color;
+        }
+
+        @include lg {
+            background: transparent;
+            margin-left: $horizontal-margin;
+            margin-right: $horizontal-margin;
+            color: $primary-color;
+        }
+
+        @include xl {
+            background: transparent;
+            margin-left: $horizontal-margin;
+            margin-right: $horizontal-margin;
+            color: $primary-color;
+        }
+
+        .menuBar {
+            background: transparent;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .menu {
+            background: transparent;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .menuText {
+                font-weight: 500;
+                background: transparent;
+
+                &::after {
+                    content: '';
+                    width: 0;
+                    display: block;
+                    border-bottom: 2px solid #f1f1f1;
+                    transform: translateY(-41px);
+                    transition: width 0.3s ease;
+                    -webkit-transform: translateY(-41px);
+                    -moz-transform: translateY(-41px);
+                    -ms-transform: translateY(-41px);
+                    -o-transform: translateY(-41px);
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
