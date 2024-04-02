@@ -1,8 +1,12 @@
-import HomePage from "@/components/Home/HomePage";
+import HomeAbout from "@/components/Home/HomeAbout";
+import HomeBanner from "@/components/Home/HomeBanner";
 
-export default function Home() {
+export default function Home()
+{
   return (
-      <HomePage />
-
+    <>
+      <HomeBanner />
+      <HomeAbout />
+    </>
   );
 }

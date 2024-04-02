@@ -15,7 +15,7 @@ const menu = [
     { path: "/", item: "Reservations" },
 ];
 
-const HomePage = () =>
+const HomeBanner = () =>
 {
     return (
         <div className={`${style.heroWrapper}`}>
@@ -47,11 +47,10 @@ const HomePage = () =>
                                 height: "175px",
                                 background: "transparent"
                             }} alt="decoration" />
-                    </div>
-
-                    <div className={`${styleButton.buttonBody} col-1-of-1`}>
-                        <Button title="BOOK A TABLE" />
-                        <Button title="SEE THE MENU" />
+                        <div className={`${styleButton.buttonBody}`}>
+                            <Button title="BOOK A TABLE" />
+                            <Button title="SEE THE MENU" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,4 +58,4 @@ const HomePage = () =>
     );
 };
 
-export default HomePage;
+export default HomeBanner;
