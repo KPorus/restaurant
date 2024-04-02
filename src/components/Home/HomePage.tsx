@@ -1,8 +1,10 @@
 import Link from "next/link";
 import style from "../../styles/HomeBanner/homeBanner.module.scss";
+import styleButton from "../../styles/button/button.module.scss";
 import Image from "next/image";
 import logo from "../../../public/images/Asset-1.png";
 import dec from "../../../public/images/Vector-Smart-Object1.png";
+import Button from "./Buttons/Button";
 
 const menu = [
     { path: "/", item: "Home" },
@@ -35,15 +37,22 @@ const HomePage = () =>
                         }
                     </div>
                 </div>
-                <div className={`${style.bannerBody}`}>
-                    <h2 style={{ background: "transparent", fontSize: "46px" }} >the right ingredients
-                        <br />for the right food</h2>
-                    <Image src={dec}
-                        style={{
-                            width: "235px",
-                            height: "175px",
-                            background: "transparent"
-                        }} alt="decoration" />
+                <div className={`${style.bannerBody} row`}>
+                    <div className="col-1-of-1">
+                        <h2 style={{ background: "transparent", fontSize: "7.524rem" }} >the right ingredients
+                            <br />for the right food</h2>
+                        <Image src={dec}
+                            style={{
+                                width: "235px",
+                                height: "175px",
+                                background: "transparent"
+                            }} alt="decoration" />
+                    </div>
+
+                    <div className={`${styleButton.buttonBody} col-1-of-1`}>
+                        <Button title="BOOK A TABLE" />
+                        <Button title="SEE THE MENU" />
+                    </div>
                 </div>
             </div>
         </div>

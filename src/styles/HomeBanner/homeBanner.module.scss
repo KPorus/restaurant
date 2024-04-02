@@ -67,6 +67,7 @@ $horizontal-margin: auto;
             align-items: center;
 
             .menuText {
+                font-size: 1.7556rem;
                 font-weight: 500;
                 background: transparent;
 
@@ -92,10 +93,10 @@ $horizontal-margin: auto;
         .bannerBody {
 
             background: transparent;
-            padding-top: 85px;
-            padding-bottom: 61px;
+            // padding-top: 85px;
+            // padding-bottom: 61px;
             text-align: center;
-            line-height: 80px;
+            // line-height: 80px;
         }
     }
 }
