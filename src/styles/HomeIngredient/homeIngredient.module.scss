@@ -1,0 +1,19 @@
+.ingredient {
+    background: url('https://i.ibb.co/qnPBVK1/ingrediantbg.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 6.25rem 0 6.55rem 0;
+
+    .ingredientBody {
+        background: #0000007e;
+
+        padding: 5rem 2.625rem 1.125rem 2.625rem;
+
+        .ingredientTitle {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+    }
+
+}

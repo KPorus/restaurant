@@ -3,7 +3,7 @@ import style from "../../styles/HomeBanner/homeBanner.module.scss";
 import styleButton from "../../styles/button/button.module.scss";
 import Image from "next/image";
 import logo from "../../../public/images/Asset-1.png";
-import dec from "../../../public/images/Vector-Smart-Object1.png";
+import dec from "../../../public/images/Vector-Smart-Object2.png";
 import Button from "./Buttons/Button";
 
 const menu = [
@@ -43,9 +43,11 @@ const HomeBanner = () =>
                             <br />for the right food</h2>
                         <Image src={dec}
                             style={{
-                                width: "235px",
-                                height: "175px",
-                                background: "transparent"
+                                width: "31%",
+                                height: "49px",
+                                background: "transparent",
+                                marginTop:"34px",
+                                marginBottom:"34px"
                             }} alt="decoration" />
                         <div className={`${styleButton.buttonBody}`}>
                             <Button title="BOOK A TABLE" />

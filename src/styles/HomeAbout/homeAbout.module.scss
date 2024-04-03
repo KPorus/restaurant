@@ -1,8 +1,21 @@
-.aboutBody {
-    margin-top: 20px;
+.about {
+    background: url('https://i.ibb.co/Fsv3WTQ/pattern.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
 
     .aboutTitle {
         color: #cc9900;
         font-size: 3.0096rem;
+        margin-top: 3.125rem;
+        margin-bottom: 1.0625rem;
+    }
+
+    .aboutBody {
+        font-size: 1.33328rem;
+        color: #4c4c4c;
+        line-height: 3.000002rem;
+        margin-top: 1.9375rem;
+        margin-bottom: 3.1875rem;
     }
 }

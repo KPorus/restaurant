@@ -35,9 +35,9 @@ html {
   max-width: $grid-width;
   margin: 0 auto;
 
-  &:not(:last-child) {
-    margin-bottom: $gutter-vertical;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: $gutter-vertical;
+  // }
 
   &::after {
     content: "";
