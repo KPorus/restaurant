@@ -1,0 +1,20 @@
+.menu {
+    background: url('https://i.ibb.co/FhZdbXH/pattern.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    .menuBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 100px 0 98px 0;
+
+        .menuTitle {
+            font-size: 3rem;
+            padding-bottom: 1.125rem;
+            color: #cc9900;
+        }
+    }
+
+}
