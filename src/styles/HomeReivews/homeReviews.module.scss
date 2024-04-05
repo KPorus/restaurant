@@ -1,0 +1,26 @@
+.review {
+    background: url('https://i.ibb.co/cFmkc8g/guest.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 6.25rem 0 6.55rem 0;
+    color: #ffffff;
+
+    .reviewBody {
+        width: 50%;
+        background: #0000007e;
+
+        padding: 5rem 2.625rem 0 2.625rem;
+
+        .reviewTitle {
+            padding-bottom: 1.125rem;
+            font-size: 3rem;
+        }
+        .reviewParagraph{
+            font-size: 2.08rem;
+            padding-bottom: 2.375rem;
+        }
+    }
+
+
+}
