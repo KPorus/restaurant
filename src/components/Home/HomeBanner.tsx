@@ -3,7 +3,6 @@ import style from "../../styles/HomeBanner/homeBanner.module.scss";
 import styleButton from "../../styles/button/button.module.scss";
 import Image from "next/image";
 import logo from "../../../public/images/Asset-1.png";
-import dec from "../../../public/images/Vector-Smart-Object2.png";
 import Button from "./Buttons/Button";
 
 const menu = [
@@ -41,7 +40,9 @@ const HomeBanner = () =>
                     <div className="col-1-of-1">
                         <h2 style={{ background: "transparent", fontSize: "7.524rem" }} >the right ingredients
                             <br />for the right food</h2>
-                        <Image src={dec}
+                        <Image src={"https://i.ibb.co/LrxYWfp/Vector-Smart-Object2.png"}
+                        width={500}
+                        height={500}
                             style={{
                                 width: "31%",
                                 height: "49px",
